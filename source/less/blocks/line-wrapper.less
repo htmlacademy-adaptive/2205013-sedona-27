@@ -1,39 +1,29 @@
 .line-wrapper {
-
   @media (min-width: @tablet-width) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
     position: relative;
 
     &::before {
-      position: absolute;
       content: "";
+      width: 100%;
       height: 1px;
       background-color: #dbdbdb;
-      width: 123px;
-      top: 50%;
-      right: calc(100% + 58px);
-
-    }
-
-    &::after {
       position: absolute;
-      content: "";
-      height: 1px;
-      background-color: #dbdbdb;
-      width: 123px;
+      left: 0;
       top: 50%;
-      left: calc(100% + 58px);
+      z-index: 1;
     }
   }
+}
 
-  @media (min-width: 800px) {
-    position: relative;
-
-    &::before {
-      width: 280px;
-    }
-
-    &::after {
-      width: 280px;
-    }
-  }
+.line-wrapper__text {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: inline-block;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 10;
+  max-width: 295px;
 }

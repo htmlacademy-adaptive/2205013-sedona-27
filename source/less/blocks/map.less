@@ -1,29 +1,27 @@
 .map__wrapper {
-  background: #82b3d3 url("../../img/backgrounds/map-mobile@1x.jpg") no-repeat center center;
-  background-size: cover;
+  background: #82b3d3 url("../img/backgrounds/map-mobile@1x.jpg") no-repeat center center/cover;
   height: 350px;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    background: #82b3d3 url("../../img/backgrounds/map-tablet@1x.jpg") no-repeat center center;
-    background-size: cover;
+    background: #82b3d3 url("../img/backgrounds/map-tablet@1x.jpg") no-repeat center center/cover;
     height: 350px;
     position: relative;
   }
 
   @media (min-width: @desktop-width) {
-    background: #82b3d3 url("../../img/backgrounds/map-desktop@1x.jpg") no-repeat center center;
-    background-size: cover;
+    background: #82b3d3 url("../img/backgrounds/map-desktop@1x.jpg") no-repeat center center/cover;
     height: 350px;
     position: relative;
   }
-/* Требует уточнения реализации */
-/*
+
+  /* Требует уточнения реализации */
+  /*
   &::after {
     content: "";
     width: 27px;
     height: 27px;
-    background: url("../../img/icons/map-marker.svg") no-repeat center center;
+    background: url("../img/icons/map-marker.svg") no-repeat center center;
     background-size: cover;
     position: absolute;
     top: 50%;

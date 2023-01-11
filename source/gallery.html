@@ -8,11 +8,11 @@
   <meta name="description"
     content="Приезжайте в Седону и вы забудете, что такое Гранд-Каньон.Подробности на нашем сайте.">
   <meta name="Keywords" content="каталог гостиниц, отдых, путешествие, Седона, Гранд-Каньон ">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../favicon.ico">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="./favicon.ico">
   <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/favicon-180.png">
-  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="manifest" href="./manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -69,12 +69,14 @@
               <div class="gallery__item-wrapper">
                 <a class="gallery__item-link" href="#">
                   <picture>
+                    <!-- временно , тк не добавляются webp
                     <source type="image/webp" media="(min-width: 1200px)"
                       srcset="./img/gallery/unnative-spaces-desktop@1x.webp 1x, ./img/gallery/unnative-spaces-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
                       srcset="./img/gallery/unnative-spaces-tablet@1x.webp 1x, ./img/gallery/unnative-spaces-tablet@2x.webp 2x">
                     <source type="image/webp"
                       srcset="./img/gallery/unnative-spaces-mobile@1x.webp 1x, ./img/gallery/unnative-spaces-mobile@2x.webp 2x">
+-->
                     <source media="(min-width: 1200px)"
                       srcset="./img/gallery/unnative-spaces-desktop@1x.jpeg 1x, ./img/gallery/unnative-spaces-desktop@2x.jpeg 2x">
                     <source media="(min-width: 768px)"
@@ -214,8 +216,8 @@
     <!-- Footer -->
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="main-footer__hashtag">
-          <p class="main-footer__hashtag-title">#Visitsedona</p>
+        <div class="main-footer__hashtag hashtag">
+          <p class="hashtag__title">#Visitsedona</p>
         </div>
         <div class="main-footer__social social">
           <ul class="social__list">
@@ -236,13 +238,11 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright">
-          <a class="main-footer__copyright-link" id="copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><b
-              class="main-footer__copyright-text">Разработано</b>
-            <svg width="27" height="35" viewBox="0 0 27 35" aria-hidden="true" role="img"
-              aria-label="Логотип htmlacademy.">
-              <path fill="currentcolor"
-                d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+        <div class="main-footer__copyright copyright">
+          <a class="copyright__link" id="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <b class="copyright__text">Разработано</b>
+            <svg class="copyright__logo-html-academy" width="27" height="35">
+              <use href="./img/sprite.svg#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>

@@ -1,33 +1,32 @@
 .hero {
   position: relative;
-  background: #82b3d3 url("../../img/backgrounds/hero-background-mobile@1x.jpeg") no-repeat center center;
-  background-size: cover;
+  background: #82b3d3 url("../img/backgrounds/hero-background-mobile@1x.jpeg") no-repeat center center/cover;
   padding: 55px 0 85px 0;
-  height: 389px;
+  min-height: 389px;
   box-sizing: border-box;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/backgrounds/hero-background-mobile@2x.jpg");
+    background: #82b3d3 url("../img/backgrounds/hero-background-mobile@2x.jpg") no-repeat center center;
     background-size: 320px auto;
   }
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/backgrounds/hero-background-tablet@1x.jpeg");
+    background: #82b3d3 url("../img/backgrounds/hero-background-tablet@1x.jpeg") no-repeat center center/cover;
     padding: 77px 0 91px 0;
     min-height: 518px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/backgrounds/hero-background-tablet@2x.jpg");
+      background-image: url("../img/backgrounds/hero-background-tablet@2x.jpg");
       background-size: 768px auto;
     }
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../../img/backgrounds/hero-background-desktop@1x.jpeg");
+    background: #82b3d3 url("../img/backgrounds/hero-background-desktop@1x.jpeg")no-repeat center center/cover;
     padding: 78px 0 90px 0;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/backgrounds/hero-background-desktop@2x.jpg");
+      background-image: url("../img/backgrounds/hero-background-desktop@2x.jpg");
       background-size: 1200px auto;
     }
   }
@@ -36,8 +35,7 @@
     content: "";
     width: 100%;
     height: 57px;
-    background: url("../../img/icons/hero-bottom-effect.svg") no-repeat center center;
-    background-size: cover;
+    background: url("../img/icons/hero-bottom-effect.svg") no-repeat center center/cover;
     position: absolute;
     bottom: 0;
   }
@@ -49,9 +47,8 @@
   min-width: 282px;
   min-height: 214px;
 
-
   @media (min-width: @tablet-width) {
     min-width: 461px;
     min-height: 350px;
-}
+  }
 }
